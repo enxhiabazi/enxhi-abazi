@@ -1,0 +1,279 @@
+/*CSS*/
+/*Importing font-family Quicksand*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Here the reset ends*/
+
+/*HERE STARTS THE REAL CSS :) */
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+/*     HELPING CLASSES   */
+.d-flex{
+    display: flex;
+}
+.j-between{
+    justify-content: space-between;
+}
+.row{
+    flex-direction: row;
+}
+.col{
+    flex-direction: column;
+}
+.border-10{
+    border-radius: 10px;
+}
+.padding-10{
+    padding: 10px;
+}
+.font-white{
+    color: white;
+}
+.border-grey{
+    border: 1px double rgb(226, 225, 225);
+}
+.margin-l-70{
+    margin-left: 70px;
+}
+.flex-1{
+    flex: 1;
+}
+.txt-dec-none{
+    text-decoration: none;
+}
+.color-blue{
+    color: rgb(49, 131, 156);
+}
+/*  -------- MAIN CLASSES ----- */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+}
+header{
+    width: inherit;
+    color: rgb(15, 15, 90);
+    background: linear-gradient(180deg, rgba(231,231,231,1) 0%, rgba(255,255,255,1) 1%, rgba(231,231,231,1) 75%, rgba(231,231,231,1) 100%);
+    height: 50px;
+    align-items: center;
+    border: 1px double whitesmoke;
+}
+header .icon1{
+    height: inherit;
+    border-radius: 8px 0 0 8px;
+    width: 8%;
+}
+header .main-d{
+    width: 92%;
+    height: inherit;
+    }
+.buttons button{
+    padding: 10px 40px;
+    border: none;
+    background: linear-gradient(180deg, rgba(231,231,231,1) 0%, rgba(255,255,255,1) 1%, rgba(231,231,231,1) 75%, rgba(231,231,231,1) 100%);
+    border-right: 1px solid whitesmoke;
+    font-size: 18px;
+    font-weight: 900;
+    height: inherit;
+    }
+header .form{
+    width: 20%;
+    align-items: center;
+    margin-right:5px;
+}
+header .form .search i{
+    position: absolute;
+    margin: 5px 20px;
+}
+header .form input{
+    border-radius: 30px 0 0 30px;
+    border: 1px solid lightgrey;
+    font-size: 14px;
+    padding: 5px 18px;
+    text-align: center;
+    width: 130px;
+}
+header .form img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.main{
+    margin-top: 10px;
+    width: inherit;
+}
+.main nav{
+    height: 50px;
+    background-color: rgb(63, 59, 59);
+    padding: 0 10px;
+    border-radius: 0 0 10px 10px;
+}
+nav ul{
+    align-items: center;
+    padding: 5px;
+}
+.main nav ul li{
+    color: rgb(49, 131, 156);
+    padding: 10px 15px;
+    border-right: 1px solid rgb(14, 118, 167);
+}
+.browse{
+    height: 80px;
+    font-size: 30px;
+    align-items: center;
+    color: gray;
+    border-radius: 10px 10px 0 0;
+}
+.browse p{
+    border-right: 1px solid lightgray;
+    padding: 15px;
+}
+.bigCol2{
+    background-color: whitesmoke;
+    margin-top: 20px;
+}
+.browse button{
+    background-color: rgb(14, 118, 167);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    padding: 10px 30px;
+}
+.actions{
+    flex: 1;
+    padding: 20px;
+    align-items:center;
+}
+.actions .row{
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 60px;
+}
+.actions .icon{
+    width: 25px;
+    height: 25px;
+}
+.actions h5{
+    font-weight: 900;
+    margin-left: 10px;
+}
+.content{
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+.content img{
+    width: 80%;
+    height: 150px;
+}
+.content p{
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+.content .btn{
+    width: 80%;
+    background-color: rgb(14, 118, 167);
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.empty{
+    width: inherit;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+}
+footer{
+    width: inherit;
+    margin-top: 40px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.footerInfo h4{
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px 0;
+}
+.footerInfo ul{
+    border-top: 1px solid lightgray;
+    margin:10px 0;
+    padding: 10px 0;
+}
+.footerInfo div{
+    margin: 10px;
+}
+.footerInfo{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+
+}
+.footerInfo ul li{
+    padding: 5px;
+}
+.footerInfo ul a{
+    text-decoration: none;
+    color: black;
+}
+footer p span{
+    color: rgb(14, 118, 167);
+    text-decoration: underline;
+}
