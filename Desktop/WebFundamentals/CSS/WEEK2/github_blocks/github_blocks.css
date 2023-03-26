@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: block;
+    width: 40%;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px 0;
+}
+.one img, .two img, .three img{
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+}
+.one{
+    background:lightblue;
+    display: space-between;
+    margin: 20px;
+}
+.two{
+    background-color: pink;
+    display: space-between;
+    margin: 20px;
+}
+.three{
+    background-color: white;
+    display: space-between;
+    margin: 20px;
+}
